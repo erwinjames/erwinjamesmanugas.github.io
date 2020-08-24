@@ -199,6 +199,7 @@ img {
 }
 
 .home__title {
+    padding-top: 6rem;
     align-self: flex-end;
     font-size: var(--big-font-size);
     color: var(--white-color);
