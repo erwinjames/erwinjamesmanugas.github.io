@@ -152,6 +152,12 @@ img {
     }
 }
 
+.home__description {
+    color: var(--white-color);
+    margin-left: 55%;
+    position: relative;
+}
+
 .nav__image img {
     width: 10%;
 }
@@ -191,6 +197,20 @@ img {
     left: 0;
     top: 2rem;
     background-color: var(--first-color);
+}
+
+.underlined::after {
+    position: absolute;
+    content: "";
+    width: 63.5%;
+    height: .18rem;
+    left: 0;
+    top: 1.5rem;
+    background-color: var(--first-color);
+}
+
+.home__description p {
+    text-shadow: var(--footer-color-hover);
 }
 
 .home {
@@ -426,6 +446,10 @@ footer__social:hover {
     color: var(--white-color);
 }
 
+.home__description p {
+    display: block;
+}
+
 @media screen and (min-width:768px) {
     body {
         margin: 0;
@@ -461,6 +485,9 @@ footer__social:hover {
         color: var(--white-color);
     }
     .active::after {
+        background-color: var(--white-color);
+    }
+    .underlined::after {
         background-color: var(--white-color);
     }
     .home__container {
