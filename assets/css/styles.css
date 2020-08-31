@@ -154,7 +154,6 @@ img {
 
 .home__description {
     color: var(--white-color);
-    margin-left: 55%;
     position: relative;
 }
 
@@ -229,6 +228,10 @@ img {
     font-size: var(--mid-font-size);
     color: var(--white-color);
     line-height: .8;
+}
+
+.home__description p {
+    top: 0;
 }
 
 .home__title span {
@@ -446,10 +449,6 @@ footer__social:hover {
     color: var(--white-color);
 }
 
-.home__description p {
-    display: block;
-}
-
 @media screen and (min-width:768px) {
     body {
         margin: 0;
@@ -545,7 +544,7 @@ footer__social:hover {
         text-shadow: 0 20px 25px rgba(0, 0, 0, 0.329);
     }
     .nav__image img {
-        width: 10%;
+        width: 13%;
     }
 }
 
