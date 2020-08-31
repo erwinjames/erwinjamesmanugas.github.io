@@ -33,6 +33,7 @@
     --mb-2: 1rem;
     --mb-3: 1.5rem;
     --mb-4: 2rem;
+    --mb-5: 8rem;
 }
 
 :root {
@@ -150,11 +151,22 @@ img {
         transition-timing-function: .5s;
         backdrop-filter: blur(10px);
     }
-}
-
-.home__description {
-    color: var(--white-color);
-    position: relative;
+    .underlined::after {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: .13rem;
+        left: 0;
+        top: 1.5rem;
+        background-color: var(--white-color);
+    }
+    .home__description {
+        color: var(--white-color);
+        position: relative;
+        text-align: center;
+        width: 30%;
+        bottom: 6rem;
+    }
 }
 
 .nav__image img {
@@ -198,20 +210,6 @@ img {
     background-color: var(--first-color);
 }
 
-.underlined::after {
-    position: absolute;
-    content: "";
-    width: 63.5%;
-    height: .18rem;
-    left: 0;
-    top: 1.5rem;
-    background-color: var(--first-color);
-}
-
-.home__description p {
-    text-shadow: var(--footer-color-hover);
-}
-
 .home {
     position: relative;
     background-color: var(--first-color);
@@ -240,13 +238,7 @@ img {
 
 .home__scroll {
     align-self: flex-end;
-    padding-bottom: var(--mb-4);
-}
-
-.home__scroll-link {
-    writing-mode: vertical-lr;
-    transform: rotate(-180deg);
-    color: var(--white-color);
+    padding-bottom: var(--mb-5);
 }
 
 .home__img {
@@ -552,5 +544,60 @@ footer__social:hover {
     .bd-grid {
         margin-left: auto;
         margin-right: auto;
+    }
+    .home__scroll-link {
+        border-left: 2px solid #fff;
+        height: 129px;
+        bottom: 0;
+        position: absolute;
+    }
+    .scroll__mouse {
+        width: 3px;
+        padding: 10px 15px;
+        height: 35px;
+        border: 2px solid #fff;
+        border-radius: 25px;
+        opacity: 0.75;
+        box-sizing: content-box;
+    }
+    .scroller {
+        width: 3px;
+        height: 10px;
+        border-radius: 25%;
+        background-color: var(--white-color);
+        animation-name: scroll;
+        animation-duration: 2.2s;
+        animation-timing-function: cubic-bezier(.15, .41, .69, .94);
+        animation-iteration-count: infinite;
+    }
+    @keyframes scroll {
+        0% {
+            opacity: 0;
+        }
+        10% {
+            transform: translateY(0);
+            opacity: 1;
+        }
+        100% {
+            transform: translateY(15px);
+            opacity: 1;
+        }
+    }
+    .underlined::after {
+        position: absolute;
+        content: "";
+        width: 25%;
+        height: .14rem;
+        left: 0;
+        top: 1.5rem;
+        background-color: var(--white-color);
+    }
+    .home__description {
+        color: var(--white-color);
+        margin-left: 55%;
+        position: relative;
+    }
+    .home__description p {
+        text-shadow: var(--footer-color-hover);
     }
 }
