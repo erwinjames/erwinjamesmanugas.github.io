@@ -222,6 +222,7 @@ img {
 }
 
 .home__title {
+    padding-top: 6rem;
     align-self: flex-end;
     font-size: var(--mid-font-size);
     color: var(--white-color);
