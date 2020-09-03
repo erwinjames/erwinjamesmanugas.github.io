@@ -47,7 +47,7 @@ const sr = ScrollReveal({
 })
 
 sr.reveal('.home__title', {})
-sr.reveal('.home__scroll', { dealy: 200 })
+sr.reveal('.home__scroll', { origin: 'bottom', dealy: 200 })
 sr.reveal('.home__img', { origin: 'right', delay: 400 })
 
 sr.reveal('.about__img', { delay: 500 })
