@@ -246,7 +246,7 @@ img {
     position: absolute;
     right: 0;
     bottom: 0;
-    width: 800px;
+    width: 750px;
 }
 
 .about__container {
@@ -488,11 +488,11 @@ footer__social:hover {
         row-gap: 0;
     }
     .home__img {
-        width: 700px;
+        width: 650px;
         right: 8%;
     }
     .home__img img {
-        width: 500px;
+        width: 450px;
     }
     .about__container {
         grid-template-columns: repeat(2, 1fr);
