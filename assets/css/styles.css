@@ -212,7 +212,9 @@ img {
 
 .home {
     position: relative;
-    background-color: var(--first-color);
+    /* background-color: var(--first-color); */
+    background-image: url(../img/headerbackground.jpg);
+    background-size: cover;
     overflow: hidden;
 }
 
