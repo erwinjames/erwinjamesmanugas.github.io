@@ -544,6 +544,7 @@ img {
     padding: .75rem 2.5rem;
     margin-left: auto;
     border-radius: .5rem;
+    width: 9rem;
     border: none;
     outline: none;
     font-size: var(--normal-font-size);
