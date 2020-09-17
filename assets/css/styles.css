@@ -261,10 +261,7 @@ img {
     display: flex;
     justify-content: center;
     padding-top: 1rem;
-    width: 140px;
-    height: 140px;
     background-color: var(--first-color);
-    border-radius: 50%;
     overflow: hidden;
 }
 
@@ -338,7 +335,6 @@ img {
 .portfolio__img img {
     width: 100%;
     height: 100%;
-    border-radius: .5rem;
 }
 
 .portfolio__link {
@@ -476,6 +472,39 @@ img {
 .popup-header {
     text-align: left;
     padding: 0 2em 1em;
+}
+
+.modal-container {
+    margin-top: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    text-align: initial;
+}
+
+.modal__buttons_container {
+    position: absolute;
+    margin: 5rem 0px 0px 10rem;
+}
+
+.modal__image_container {
+    width: 500px;
+    height: 400px;
+    background-color: var(--first-color);
+}
+
+.modal__image_container img {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.modal__buttons_container a {
+    font-size: 1.5rem;
+    font-weight: 30px;
+    margin: 30px 30px 0px 30px;
+    padding: 1rem;
+    border: 0.2rem solid var(--first-color);
+    color: var(--first-color);
 }
 
 .contact__container {
@@ -617,11 +646,11 @@ footer__social:hover {
         padding: 4rem 0;
     }
     .about__img {
-        width: 200px;
-        height: 200px;
+        width: 100%;
+        height: 100%;
     }
     .about__img img {
-        width: 195px;
+        width: 270px;
     }
     .skills_container {
         grid-template-columns: repeat(2, 1fr);
