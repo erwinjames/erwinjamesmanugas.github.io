@@ -666,7 +666,6 @@ footer__social:hover {
             transform: scale(1);
         }
     }
-    /* Inner */
     .popup-inner {
         width: 60%;
         height: 60%;
@@ -680,7 +679,6 @@ footer__social:hover {
         border-radius: 3px;
         background: #fff;
     }
-    /* Close Button */
     .popup-close {
         width: 30px;
         height: 30px;
@@ -714,12 +712,12 @@ footer__social:hover {
     .modal-container {
         margin-top: 1rem;
         grid-template-columns: repeat(2, 1fr);
-        align-items: center;
         text-align: initial;
     }
     .modal__buttons_container {
         position: absolute;
-        margin: 5rem 0px 0px 10rem;
+        bottom: 1rem;
+        margin-left: 16%;
     }
     .modal__image_container {
         width: 500px;
@@ -734,10 +732,42 @@ footer__social:hover {
     .modal__buttons_container a {
         font-size: 1.5rem;
         font-weight: 30px;
-        margin: 30px 30px 0px 30px;
+        bottom: 0;
         padding: 1rem;
         border: 0.2rem solid var(--first-color);
         color: var(--first-color);
+    }
+    .modal__header_letter {
+        margin-top: 1.5rem;
+    }
+    .button__nav {
+        display: inline-block;
+        font-size: var(--small-font-size);
+        margin-right: var(--mb-2);
+        margin-bottom: var(--mb-3);
+        background-color: var(--white-color);
+        border-radius: 25rem;
+        bottom: 4rem;
+    }
+    .tech__name {
+        display: inline-block;
+        font-size: var(--small-font-size);
+        margin-right: var(--mb-2);
+        margin-bottom: var(--mb-3);
+        padding: .25rem .5rem;
+        background-color: var(--white-color);
+        border-radius: 25rem;
+    }
+    .tech__name:hover {
+        background-color: var(--first-color);
+        color: var(--white-color);
+    }
+    .modal__p {
+        width: 100%;
+    }
+    .tech__container {
+        bottom: 7rem;
+        position: absolute;
     }
 }
 
